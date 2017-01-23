@@ -67,8 +67,52 @@ body {
   border: 15px solid #fff;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 header {
-  height: 100px;
+  height: 150px;
+}
+header .logo {
+  overflow: hidden;
+  height: 116px;
+}
+header .nav-bar li {
+  margin: 0 20px;
+}
+header .nav-bar li:nth-child(5) {
+  margin-right: 0;
+}
+header .nav-bar li a {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: block;
+  line-height: 70px;
+  padding: 0 5px;
+  font-family: "Century Gothic",Arial,sans-serif;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+header .nav-bar li a:hover {
+  background-color: #ffea00;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: 200px;
+}
+
+.grid-item--width2 {
+  width: 400px;
 }
 
 @media (min-width: 1201px) {

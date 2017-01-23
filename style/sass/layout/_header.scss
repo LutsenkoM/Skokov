@@ -1,8 +1,41 @@
 body {
-  background: #f6f6f6;
+  background: $gray;
   border: 15px solid #fff;
+
+}
+
+a{
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 header {
-  height: 100px;
+  height: 150px;
+  .logo {
+    overflow: hidden;
+    height: 116px;
+  }
+  .nav-bar {
+    li {
+      margin: 0 20px;
+      &:nth-child(5){
+        margin-right: 0;
+      }
+      a {
+        @include transition(0.5s);
+        display: block;
+        line-height: 70px;
+        padding: 0 5px;
+        font-family: "Century Gothic",Arial,sans-serif;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        &:hover {
+          background-color: $yellow;
+        }
+      }
+    }
+  }
 }
