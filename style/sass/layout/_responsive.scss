@@ -5,3 +5,12 @@
     padding: 0 5%;
   }
 }
+
+@media (max-width: 991px) {
+  .nav-bar {
+    display: none !important;
+  }
+  #button-menu {
+    display: block;
+  }
+}

@@ -709,6 +709,5 @@
         return (this.cols - t) * this.columnWidth - this.gutter
     }, i.prototype.needsResizeLayout = function () {
         var t = this.containerWidth;
-        return this.getContainerWidth(), t != this.containerWidth
-    }, i
+        return this.getContainerWidth(), t != this.containerWidth    }, i
 });

@@ -1,12 +1,13 @@
 body {
   background: $gray;
-  border: 15px solid #fff;
+  border: 15px solid $white;
 
 }
 
-a{
+a, button{
   &:hover {
     text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -16,26 +17,75 @@ header {
     overflow: hidden;
     height: 116px;
   }
-  .nav-bar {
-    li {
-      margin: 0 20px;
-      &:nth-child(5){
-        margin-right: 0;
-      }
-      a {
-        @include transition(0.5s);
-        display: block;
-        line-height: 70px;
-        padding: 0 5px;
-        font-family: "Century Gothic",Arial,sans-serif;
-        color: #000;
-        font-size: 1rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        &:hover {
-          background-color: $yellow;
-        }
+}
+
+.nav-bar {
+  li {
+    margin: 0 20px;
+    &:nth-child(5){
+      margin-right: 0;
+    }
+    a {
+      @include transition(0.5s);
+      display: block;
+      line-height: 70px;
+      padding: 0 5px;
+      font-family: "Century Gothic",Arial,sans-serif;
+      color: #000;
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $yellow;
       }
     }
   }
 }
+
+
+#button-menu {
+  display: none;
+  background-color: transparent;
+  background: none;
+  border: 1px solid transparent;
+  & span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: $black;
+  }
+}
+
+.hide-nav-bar {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: $gray;
+  position: absolute;
+  z-index: 9;
+  top: 150px;
+  left: 0;
+  right: 0;
+  border-right: 15px solid $white;
+  border-left: 15px solid $white;
+  li {
+    width: 100%;
+    text-align: center;
+    a {
+      @include transition(0.5s);
+      display: block;
+      line-height: 70px;
+      padding: 0 5px;
+      font-family: "Century Gothic",Arial,sans-serif;
+      color: #000;
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+  }
+}
+
