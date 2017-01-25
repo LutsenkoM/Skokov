@@ -3,15 +3,18 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background: $darkGray;
+    .container {
+      display: flex;
+    }
     h2 {
       margin-bottom: 1.5rem;
-      font-family: "Century Gothic",Arial,sans-serif;
+      font-family: $Gothic;
       font-size: 1.125rem;
       font-weight: 400;
       color: $white;
     }
     article {
-      font-family: "Century Gothic",Arial,sans-serif;
+      font-family: $Gothic;
       font-size: 0.8rem;
       font-weight: 400;
       color: $white;
@@ -23,16 +26,21 @@ footer {
     background: $black;
     color: $white;
     p {
-      font-family: "Century Gothic",Arial,sans-serif;
+      font-family: $Gothic;
       font-size: 1rem;
       font-weight: 400;
     }
   }
-  .nav-bar {
-    li a{
-      color: $white;
-      &:hover {
-        color: #000;
+  .nav-bar-footer {
+      @extend .nav-bar;
+      display: flex;
+    li {
+      margin: 0 5px;
+      a {
+        color: $white;
+        &:hover {
+          color: #000;
+        }
       }
     }
   }
@@ -46,7 +54,7 @@ footer {
   }
   .social {
     p {
-      font-family: "Century Gothic",Arial,sans-serif;
+      font-family: $Gothic;
       font-size: 1.125rem;
       font-weight: 400;
       color: $white;
@@ -99,7 +107,7 @@ footer {
     }
     span {
       color: $white;
-      font-family: "Century Gothic", Arial, sans-serif;
+      font-family: $Gothic;
       font-size: 1rem;
       font-weight: 400;
       line-height: 21px;
@@ -108,7 +116,7 @@ footer {
   }
   p {
     color: white;
-    font-family: "Century Gothic",Arial, sans-serif;
+    font-family: $Gothic;
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 21px;
@@ -154,7 +162,7 @@ input:focus .form {
 
 .btn-style {
   @include transition(0.5s);
-  font-family: "Century Gothic",Arial,sans-serif;
+  font-family: $Gothic;
   padding: 0 0.5rem;
   margin-bottom: 1.8rem;
   line-height: 2.3rem;

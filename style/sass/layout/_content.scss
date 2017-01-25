@@ -11,7 +11,6 @@
     opacity: 1;
     background: #000;
   }
-
   .carousel-indicators {
     .active {
       background: $yellow;
@@ -21,10 +20,8 @@
       height: 16px;
       background: $darkGray;
       border: 2px solid $darkGray;
-
     }
   }
-
   .carousel-item {
     width: 100%;
     padding: 0 10%;
@@ -60,7 +57,7 @@
       line-height: 5vw;
       span {
         color: $black;
-        font-family: "Century Gothic",Arial,sans-serif;
+        font-family: $Gothic;
         font-size: 4vw;
         font-weight: 400;
         background: $yellow;
@@ -75,7 +72,7 @@
       margin-bottom: 2vw;
       span  {
         color: $white;
-        font-family: "Century Gothic",Arial,sans-serif;
+        font-family: $Gothic;
         font-size: 1.6vw;
         font-weight:400;
         background: $darkGray;
@@ -94,14 +91,14 @@
   padding-top: 6.25rem;
   margin-bottom: 6.25rem;
   h2 {
-    font-family: "Century Gothic",Arial,sans-serif;
+    font-family: $Gothic;
     font-size: 2.2rem;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1rem;
     &+p {
-      font-family: "Century Gothic",Arial,sans-serif;
+      font-family: $Gothic;
       font-size: 1.5rem;
       font-weight: 500;
       text-align: center;
@@ -136,7 +133,7 @@
 
 .hover-block-head-1 {
   p {
-    font-family: "Century Gothic",Arial,sans-serif;
+    font-family: $Gothic;
     font-size: 1.25rem;
     font-weight: 500;
     text-align: center;
@@ -179,7 +176,7 @@
   height: 30%;
   background: $darkGray;
   p {
-    font-family: "Century Gothic",Arial,sans-serif;
+    font-family: $Gothic;
     font-size: 1rem;
     line-height: 1.2rem;
     color: $white;
@@ -217,7 +214,7 @@
     border-color: transparent transparent $darkGray transparent;
   }
   h3 {
-    font-family: "Century Gothic",Arial,sans-serif;
+    font-family: $Gothic;
     font-size: 20px;
     color: $white;
     text-transform: uppercase;
@@ -240,7 +237,7 @@
   display: inline-block;
   position: relative;
   text-align: center;
-  font-family: "Century Gothic", Arial, sans-serif;
+  font-family: $Gothic;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 25px;
@@ -269,7 +266,7 @@
 }
 
 .p-style {
-  font-family: "Century Gothic",Arial,sans-serif;
+  font-family: $Gothic;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 3rem;
